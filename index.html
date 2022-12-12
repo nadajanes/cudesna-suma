@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="hr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+
+		<title>Čudesna Šuma</title>
+
+
+		<link href="css/vendors/bootstrap-reboot.css" rel="stylesheet">
+		<link href="css/vendors/bootstrap-grid.css" rel="stylesheet">
+
+
+		<link href="css/style.css" rel="stylesheet">
+
+
+		<link rel="stylesheet" href="styles/style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+		<script src="https://kit.fontawesome.com/7e9f05e3d3.js" crossorigin="anonymous"></script>
+
+
+	</head>
+	<body>
+
+
+		<nav class="nav">
+				<div class="nav-holder">
+
+					<div class="nav-logo-wrapper">
+						<a class="nav-logo" href="#">
+							<img src="img/logo.png"  alt="Site Logo">
+						</a>
+					</div>
+
+					<div class="nav-toggler-wrapper">
+						<button class="nav-toggler" aria-label="Open/Close Navigation">
+							<span></span>
+							<span></span>
+							<span></span>
+						</button>
+					</div>
+
+					<div class="nav-list-wrapper">
+						<ul class="nav-list">
+							<li class="nav-list-item">
+								<a href="#page-1.html">Naša priča</a>
+							</li>
+							<li class="nav-list-item">
+								<a href="#page-2.html">Naša ponuda</a>
+							</li>
+							<li class="nav-list-item">
+								<a href="#page-3.html">Kontakt</a>
+							</li>
+							<li class="nav-list-item">
+								<a href="#page-4.html"><i class="fa-solid fa-cart-shopping"></i></a>
+							</li>
+
+						</ul>
+					</div>
+
+				</div>
+		</nav>
+
+		<main class="main">
+
+		</main>
+
+
+		<script type="text/javascript">
+			var navToggler = document.querySelector('button.nav-toggler'),
+				navList = document.querySelector('ul.nav-list');
+
+			navToggler.addEventListener('click', function() {
+				this.classList.toggle('open');
+				navList.parentElement.classList.toggle('open');
+			});
+		</script>
+
+	</body>
+</html>

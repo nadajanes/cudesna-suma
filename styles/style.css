@@ -1,0 +1,131 @@
+nav.nav {
+    position: relative;
+    background-color: #F0F5EB;
+}
+
+.nav-holder {
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color:#78cf96fe;
+}
+
+.nav-logo-wrapper {
+    flex: 0 0 auto;
+    width: auto;
+    max-width: 100%;
+    margin-right: auto;
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+a.nav-logo {
+    display: block;
+    width: 12rem;
+    max-width: 12rem;
+}
+
+.nav-list-wrapper {
+    display: none;
+    width: 100%;
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
+    font-size: larger;
+}
+
+.nav-list-wrapper.open {
+    display: block;
+}
+
+li.nav-list-item {
+    border-bottom: 1px solid gray;
+    font-family: 'Lato', sans-serif;
+    display: block;
+    flex: 0 0 100%;
+    margin-bottom: 1rem;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+@media (min-width: 992px) {
+    li.nav-list-item {
+        border-bottom: none !important;
+    }
+
+    
+
+    .nav.nav {
+        background-color:#78cf96fe;
+    }
+    
+    .nav-holder {
+        background-color: #78cf96fe;
+    }
+
+    .nav-logo-wrapper {
+        position: absolute;
+        top: 0;
+        left: 0px;
+        background: #78cf96fe;
+    }
+
+    .nav.nav {
+        background-color: #f2f2f2;
+    }
+
+    .nav-list-wrapper {
+        display: block;
+        margin-left: auto;
+        width: auto;
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
+ 
+}
+
+ul.nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+li.nav-list-item a {
+    text-decoration: none;
+    color: black !important;
+}
+
+li.nav-list-item:first-of-type {
+    margin-top: 1rem;
+}
+
+li.nav-list-item:last-of-type {
+    margin-bottom: 0;
+}
+
+@media (min-width: 992px) {
+    li.nav-list-item {
+        flex: 0 0 auto;
+        margin-bottom: 0;
+        width: auto;
+    }
+
+    li.nav-list-item:not(:first-of-type) {
+        padding-left: 3rem;
+    }
+
+    /* Ako dropdown nije absolute */
+    li.nav-list-item:first-of-type {
+        margin-top: 0;
+    }
+}
